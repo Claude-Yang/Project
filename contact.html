@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Music Retro: Back to 80's</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Music_Intro">
+  <meta name="keywords" content="US, Japanese, Chinese, citypop, jazz, music, introduction">
+  <meta name="author" content="Claude_Yang">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    body {
+      background-image: url("images/contact.jpg");
+      font-size: 20px;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    label {
+      margin-right: 4%;
+    }
+
+    input {
+      margin-right: 1%;
+      cursor: pointer;
+    }
+
+    input#submit {
+      /* text-align: center; */
+      color: wheat;
+      /* display: block; */
+      background-color: black;
+      font-weight: bold;
+      padding: 20px;
+      font-size: 1.5em;
+      display: block;
+      margin: auto;
+      width: auto;
+      min-width: 50px;
+      cursor: pointer;
+    }
+
+
+    select option {
+      font-size: 1.3em;
+      width: 150px;
+    }
+  </style>
+</head>
+
+<body style="margin-top: 0px;">
+  <div id='nav1'>
+    <div class="container" style="background-color: white;">
+      <h1 id="logo">RETRO MUSIC</h1>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <h1>Leave your info for more articles!</h1>
+  <br>
+  <br>
+  <form id="content" method="Post" action="https://idesstage2.bc.edu/class/results.php"
+    onSubmit="alert('Info saved! Thank you for your support!')">
+    <div style="display: inline-flex;">
+      <label for="name">First_Name: </label><br>
+      <input type="text" name="fname" style="margin-right: 4%"><br>
+
+      <label for="name">Last_Name*: </label><br>
+      <input type="text" name="lname" required style="margin-right: 4%"><br>
+
+      <label for="email">Email*: </label><br>
+      <input type="text" name="email" required style="margin-right: 4%"><br>
+    </div>
+    <br>
+    <br>
+    <fieldset class="checkbox">
+      <legend>What is Your Favorite Style of Music?</legend>
+      <div style="display: inline-flex;">
+        <input type="checkbox" name="Favor_M1" value="Pop" id="pop">
+        <label for="pop">Pop</label><br>
+        <input type="checkbox" name="Favor_M2" value="Jazz" id="jazz">
+        <label for="jazz">Jazz</label><br>
+        <input type="checkbox" name="Favor_M3" value="Rock" id="rock">
+        <label for="rock">Rock</label><br>
+        <input type="checkbox" name="Favor_M4" value="Folk" id="folk">
+        <label for="folk">Folk</label><br>
+        <input type="checkbox" name="Favor_M5" value="Classic" id="classic">
+        <label for="classic">Classic</label><br>
+        <input type="checkbox" name="Favor_M6" value="Country" id="country">
+        <label for="country">Counrty</label><br>
+        <input type="checkbox" name="Favor_M7" value="Electronic" id="electronic">
+        <label for="electronic">Electronic</label><br>
+        <input type="checkbox" name="Favor_M7" value="Other" id="other">
+        <label for="other">Other</label><br>
+      </div>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset class="radio">
+      <legend>How often do you listen to a song?</legend>
+      <div style="display: inline-flex; row-gap: 10px; column-gap: 10px; width: 800px;">
+        <input type="radio" name="period" value="Every three days" id="Every three days">
+        <label for="Every three days">Every three days</label><br>
+        <input type="radio" name="period" value="Once a week" id="week">
+        <label for="week">Once a week</label><br>
+        <input type="radio" name="period" value="Once a month" id="month">
+        <label for="month">Once a month</label><br>
+        <input type="radio" name="period" value="Every few months" id="fewmonth">
+        <label for="fewmonth">Every few months</label><br>
+        <input type="radio" name="period" value="Once in a year" id="year">
+        <label for="year">Once in a year</label><br>
+        <input type="radio" name="period" value="Once in few years" id="fewyear">
+        <label for="fewyear">Once in few years</label><br>
+        <input type="radio" name="period" value="Never" id="never">
+        <label for="never">Never</label><br>
+      </div>
+    </fieldset>
+
+    <br>
+    <br>
+
+    <legend>Which part of the music do you care about most?</legend>
+    <select name="favorate part">
+      <option value="lyric">Lyric</option>
+      <option value="rhythm">rhythm</option>
+      <option value="background_instrument">background_instrument</option>
+      <option value="singer">Singer</option>
+      <option value="other">Other</option>
+    </select>
+
+    <br>
+    <br>
+
+    <legend>Choose one of your favorate music genre and explain why you like it:</legend>
+    <textarea name="Reason" rows="3" cols="60"></textarea><br>
+
+    <br>
+    <br>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+
+
+  <br>
+  <hr style="width: 75em;">
+  <footer style="position: relative;">
+    <p style="text-align: center; font-size: medium;">Author: Claude Yang &nbsp&nbsp | &nbsp&nbsp Email@: <a
+        href="mailto: yangajk@bc.edu">yangajk@bc.edu</a> </p>
+  </footer>
+</body>
+
+</html>
